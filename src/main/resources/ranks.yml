@@ -1,0 +1,170 @@
+ranks:
+  1:
+    cost: 250
+    display:
+      name: "&7«#eab676%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fCreate a Town (&7/t new&f)"
+        - " &f&l> &f1st Tier Enderchest (&7/echest&f)"
+        - " &f&l> &f2 Total Homes (&7/sethome&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+  2:
+    cost: 750
+    display:
+      name: "&7«#4273c2%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fWithdraw Money (&7/withdraw&f)"
+        - " &f&l> &fBottle Experience (&7/bottle&f)"
+        - " &f&l> &fGamble Using Coinflips (&7/coinflip&f)"
+        - " &f&l> &f2 Total Jobs (&7/jobs browse&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  3:
+    cost: 1500
+    display:
+      name: "&7«#fcfc03%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fCondense minerals into blocks (&7/block&f)"
+        - " &f&l> &fTake out loans (&7TBD&f)"
+        - " &f&l> &f2nd Tier Enderchest (&7/echest&f)"
+        - " &f&l> &f5 Total Homes (&7/sethome&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  4:
+    cost: 5000
+    display:
+      name: "&7«#2ed147%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fSecurely trade with players (&7/trade&f)"
+        - " &f&l> &fCreate chest shops (&7TBD&f)"
+        - " &f&l> &fRent a shop in the mall (&7/TBD&f)"
+        - " &f&l> &f3 Auctionhouse Slots (&7/ah&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  5:
+    cost: 12500
+    display:
+      name: "&7«#d12e2e%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fGet the position of any player (I think) (&7/getpos&f)"
+        - " &f&l> &fKeep your experience on death (&7Passive&f)"
+        - " &f&l> &f3rd Tier Enderchest (&7/echest&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  6:
+    cost: 30000
+    display:
+      name: "&7«#b71282%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fUse color on signs (&7TBD&f)"
+        - " &f&l> &fUse color in books (&7TBD&f)"
+        - " &f&l> &fVote in the courthouse (&7TBD&f)"
+        - " &f&l> &fFly in claimed land (&7/tfly&f)"
+        - " &f&l> &f3 Total Jobs (&7/jobs browse&f)"
+        - " &f&l> &f10 Total Homes (&7/sethome&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  7:
+    cost: 75000
+    display:
+      name: "&7«#ffd700%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fFind slimechunks (&7/slimechunk&f)"
+        - " &f&l> &fChange your nickname (&7/nick&f)"
+        - " &f&l> &fInvest in stocks (&7TBD&f)"
+        - " &f&l> &fCreate public warps (&7/pwarp&f)"
+        - " &f&l> &f5 Auctionhouse Slots (&7/ah&f)"
+        - " &f&l> &f4th Tieir Enderchest (&7/echest&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  8:
+    cost: 225000
+    display:
+      name: "&7«#00f2f2&l%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fRide any mob (I think) (&7TBD&f)"
+        - " &f&l> &fWear any block as a hat (&7/hat&f)"
+        - " &f&l> &fAnimate armorstands (&7TBD&f)"
+        - " &f&l> &fRename any item with color (&7/rename&f)"
+        - " &f&l> &fChange your own time (&7/ptime&f)"
+        - " &f&l> &fChange your own weather (&7/pweather&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  9:
+    cost: 650000
+    display:
+      name: "&7«#f2741c&l%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fUse color in chat (&7TBD&f)"
+        - " &f&l> &fPlace bounties on players (&7TBD&f)"
+        - " &f&l> &f7 Auctionhouse Slots (&7/ah&f)"
+        - " &f&l> &f5th Tier Enderchest (&7/echest&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  10:
+    cost: 1750000
+    display:
+      name: "&7«#7724c3&l%name%&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fCreate nations (&7/nation create&f)"
+        - " &f&l> &f4 Total Jobs (&7/jobs browse&f)"
+        - " &f&l> &f20 Total Homes (&7/sethome&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
+  11:
+    cost: 4500000
+    display:
+      name: "&7«#5A278D&lI#673A9A&ln#754DA7&lf#8260B4&la#9074C1&lm#9D87CE&lo#AB9ADB&lu#B8ADE8&ls&7»"
+      lore:
+        - ""
+        - "&f&l>&f&m=  &8&l Perks &f&m        "
+        - " &f&l> &fSpecial Discord Rank (&7/ranksync&f)"
+        - " &f&l> &fFly Outside of Combat (&7/fly&f)"
+        - " &f&l> &fMax Tier Enderchest (&7/echest&f)"
+        - " &f&l> &f5 Total Jobs (&7/jobs browse&f)"
+        - " &f&l> &f50 Total Homes (&7/sethome&f)"
+        - " &f&l> &fAbility to Prestige (&7/prestige&f)"
+        - ""
+        - "&f&l>&f&m=  &8&l Requirements &f&m        "
+        - " &f&l> &f$%cost%"
+        - " &f&l> &fPrevious Rank"
