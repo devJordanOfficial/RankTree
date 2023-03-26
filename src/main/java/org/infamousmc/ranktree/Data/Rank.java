@@ -77,6 +77,10 @@ public enum Rank {
     }
 
     public static Rank getCurrentRank(Player player) {
+        if (player == null) {
+            throw new NullPointerException("Player cannot be null");
+        }
+
         Rank rank;
         String topRank = null;
 
