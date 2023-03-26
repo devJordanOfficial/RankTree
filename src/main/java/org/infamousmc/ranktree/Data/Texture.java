@@ -9,7 +9,7 @@ public enum Texture {
 
     private final String texture;
 
-    private Texture(String texture) {
+    Texture(String texture) {
         this.texture = texture;
     }
 

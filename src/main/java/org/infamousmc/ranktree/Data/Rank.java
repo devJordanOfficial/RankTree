@@ -1,9 +1,12 @@
 package org.infamousmc.ranktree.Data;
 
+import org.bukkit.entity.Player;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public enum Rank {
+    ZERO("Wanderer", "wanderer", "wanderer", "wanderer", "wanderer" ,"wanderer" ,"wanderer", 0),
     FIRST("'Unpaid Worker'", "servus", "duolos", "dorei", "sER-vus", "doo-lEE-uus", "dohr-ai", 1),
     SECOND("Worker", "operarius", "chorikos", "rodo-sha", "oo-per-AIR-ee-OOS", "chOR-ee-khoes", "roe-doe-sah", 2),
     THIRD("Craftsman", "faber", "tekton", "shokunin", "fEYE-berg", "tehk-tawn", "shoh-koo-neen", 3),
@@ -67,5 +70,29 @@ public enum Rank {
 
     public static String[] pathValues(Rank rank) {
         return new String[] {rank.rome, rank.greece, rank.japan};
+    }
+
+    public static Rank getNextRank(Player player) {
+        return valueOf(getCurrentRank(player).order + 1);
+    }
+
+    public static Rank getCurrentRank(Player player) {
+        Rank rank;
+        String topRank = null;
+
+        for (Rank r : Rank.values()) {
+            for (String s : Rank.pathValues(r)) {
+                if (player.hasPermission("rank." + s)) {
+                    topRank = s;
+                }
+            }
+        }
+
+        if (topRank == null)
+            rank = Rank.ZERO;
+        else
+            rank = Rank.valueOf(Rank.valueOfName(topRank).order);
+
+        return rank;
     }
 }

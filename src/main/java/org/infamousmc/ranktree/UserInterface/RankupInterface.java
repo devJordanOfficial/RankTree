@@ -59,7 +59,6 @@ public class RankupInterface {
             }
         }
 
-        System.out.println();
         if (topRank == null)
             rank = Rank.FIRST;
         else
