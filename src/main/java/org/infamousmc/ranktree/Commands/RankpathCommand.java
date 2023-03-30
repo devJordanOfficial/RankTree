@@ -1,12 +1,12 @@
 package org.infamousmc.ranktree.Commands;
 
+import org.infamousmc.ranktree.Data.Texture;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.infamousmc.ranktree.Data.Texture;
 import org.infamousmc.ranktree.Main;
 import org.infamousmc.ranktree.UserInterface.RankpathInterface;
 

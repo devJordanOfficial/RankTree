@@ -1,5 +1,9 @@
 package org.infamousmc.ranktree.Events;
 
+import org.infamousmc.ranktree.Data.ItemTag;
+import org.infamousmc.ranktree.Data.ItemTagType;
+import org.infamousmc.ranktree.Data.Path;
+import org.infamousmc.ranktree.Data.Rank;
 import net.luckperms.api.context.ImmutableContextSet;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
@@ -18,7 +22,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.FireworkMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
-import org.infamousmc.ranktree.Data.*;
 import org.infamousmc.ranktree.Main;
 
 import java.util.UUID;

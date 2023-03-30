@@ -1,18 +1,20 @@
 package org.infamousmc.ranktree;
 
+import org.infamousmc.ranktree.Data.Rank;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.infamousmc.ranktree.Data.Rank;
 
 import java.text.DecimalFormat;
 
 public class RankTreeAPI {
 
-    private static final Main plugin = JavaPlugin.getPlugin(Main.class);
+    private static Main plugin;
 
-    private RankTreeAPI() {}
+    public RankTreeAPI() {
+        plugin = JavaPlugin.getPlugin(Main.class);
+    }
 
-    public static double getRankCost(Rank rank) {
+    public double getRankCost(Rank rank) {
         DecimalFormat df = new DecimalFormat("#.##");
         double cost;
 

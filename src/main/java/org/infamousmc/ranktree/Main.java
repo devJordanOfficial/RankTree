@@ -1,5 +1,11 @@
 package org.infamousmc.ranktree;
 
+import org.infamousmc.ranktree.Commands.RankpathCommand;
+import org.infamousmc.ranktree.Commands.RanksCommand;
+import org.infamousmc.ranktree.Commands.RankupCommand;
+import org.infamousmc.ranktree.Data.ConfigManager;
+import org.infamousmc.ranktree.Data.Rank;
+import org.infamousmc.ranktree.Events.GuiHandler;
 import me.arcaniax.hdb.api.HeadDatabaseAPI;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
@@ -15,14 +21,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.infamousmc.ranktree.Commands.RankpathCommand;
-import org.infamousmc.ranktree.Commands.RanksCommand;
 import org.infamousmc.ranktree.Commands.RanktreeCommands;
-import org.infamousmc.ranktree.Commands.RankupCommand;
-import org.infamousmc.ranktree.Data.ConfigManager;
 import org.infamousmc.ranktree.Data.Logger;
-import org.infamousmc.ranktree.Data.Rank;
-import org.infamousmc.ranktree.Events.GuiHandler;
 
 import java.util.HashMap;
 import java.util.UUID;

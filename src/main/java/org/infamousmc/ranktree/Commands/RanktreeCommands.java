@@ -1,9 +1,9 @@
 package org.infamousmc.ranktree.Commands;
 
+import org.infamousmc.ranktree.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.infamousmc.ranktree.Main;
 
 public class RanktreeCommands implements CommandExecutor {
 

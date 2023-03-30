@@ -1,11 +1,11 @@
 package org.infamousmc.ranktree.UserInterface;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
 import org.infamousmc.ranktree.Data.Path;
 import org.infamousmc.ranktree.Data.Rank;
 import org.infamousmc.ranktree.Data.RankDisplay;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.infamousmc.ranktree.Main;
 
 public class RanksInterface {

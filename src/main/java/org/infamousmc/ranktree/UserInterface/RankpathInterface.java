@@ -1,5 +1,7 @@
 package org.infamousmc.ranktree.UserInterface;
 
+import org.infamousmc.ranktree.Data.ItemTag;
+import org.infamousmc.ranktree.Data.Texture;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
@@ -7,9 +9,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
-import org.infamousmc.ranktree.Data.ItemTag;
 import org.infamousmc.ranktree.Data.ItemTagType;
-import org.infamousmc.ranktree.Data.Texture;
 import org.infamousmc.ranktree.Main;
 
 import java.util.ArrayList;
