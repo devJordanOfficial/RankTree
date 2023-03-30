@@ -11,7 +11,7 @@ public class RankTreeAPI {
     private static Main plugin;
 
     public RankTreeAPI() {
-        plugin = JavaPlugin.getPlugin(Main.class);
+        plugin = Main.getInstance();
     }
 
     public double getRankCost(Rank rank) {

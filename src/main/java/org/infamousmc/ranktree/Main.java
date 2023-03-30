@@ -31,6 +31,8 @@ import java.util.regex.Pattern;
 
 public final class Main extends JavaPlugin {
 
+    private static Main instance;
+
     public HeadDatabaseAPI hdb;
     public LuckPerms lp;
     public Economy economy;
@@ -87,6 +89,8 @@ public final class Main extends JavaPlugin {
                     "check your config.yml and restart the server.");
             getServer().getPluginManager().disablePlugin(this);
         }
+
+        instance = this;
     }
 
     @Override
@@ -140,6 +144,10 @@ public final class Main extends JavaPlugin {
         }
 
         return ChatColor.translateAlternateColorCodes('&', message);
+    }
+
+    public static Main getInstance() {
+        return instance;
     }
 
 }
