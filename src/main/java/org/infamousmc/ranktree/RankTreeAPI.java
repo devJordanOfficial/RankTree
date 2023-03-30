@@ -1,13 +1,14 @@
 package org.infamousmc.ranktree;
 
 import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.infamousmc.ranktree.Data.Rank;
 
 import java.text.DecimalFormat;
 
 public class RankTreeAPI {
 
-    private static final Main plugin = Main.getPlugin(Main.class);
+    private static final Main plugin = JavaPlugin.getPlugin(Main.class);
 
     private RankTreeAPI() {}
 
