@@ -17,7 +17,8 @@ public enum Rank {
     EIGHTH("Priest", "sacerdos", "presbyteros", "saishi", "sa-chAIR-dohs", "prAY-bite-roes", "sIE-sEE", 8),
     NINTH("Senator", "senator", "plousios", "join-giin", "seh-nuh-tr", "plOO-see-uus", "joyn-gEEn", 9),
     TENTH("Emperor", "caesar", "anax", "ten'no", "SEE-zr", "an-ikhs", "tEH-nOH", 10),
-    ELEVENTH("Infamous", "infamous", "infamous", "infamous", "in-fUH-mUHs", "in-fUH-mUHs", "in-fUH-mUHs", 11);
+    ELEVENTH("Infamous", "infamous", "infamous", "infamous", "in-fUH-mUHs", "in-fUH-mUHs", "in-fUH-mUHs", 11),
+    MAX("Max", "max", "max", "max", "max", "max", "max", 12);
 
     public final String english;
     public final String rome;
@@ -73,6 +74,11 @@ public enum Rank {
     }
 
     public static Rank getNextRank(Player player) {
+        Rank rank = getCurrentRank(player);
+
+        if (rank == MAX)
+            return MAX;
+
         return valueOf(getCurrentRank(player).order + 1);
     }
 

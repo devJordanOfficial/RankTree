@@ -167,10 +167,4 @@ public class RankupInterface {
         plugin.rankCache.put(player.getUniqueId(), rank);
         player.openInventory(inv);
     }
-
-    private void promoteUser(Player player, String path) {
-        User user = plugin.lp.getPlayerAdapter(Player.class).getUser(player);
-        Track track = plugin.lp.getTrackManager().getTrack(path);
-        track.promote(user, ImmutableContextSet.empty());
-    }
 }

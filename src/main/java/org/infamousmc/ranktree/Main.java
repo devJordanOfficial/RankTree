@@ -146,7 +146,7 @@ public final class Main extends JavaPlugin {
         return ChatColor.translateAlternateColorCodes('&', message);
     }
 
-    public static Main getInstance() {
+    static Main getInstance() {
         return instance;
     }
 
