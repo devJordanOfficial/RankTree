@@ -1,9 +1,7 @@
 package org.infamousmc.ranktree.Events;
 
-import org.infamousmc.ranktree.Data.ItemTag;
-import org.infamousmc.ranktree.Data.ItemTagType;
-import org.infamousmc.ranktree.Data.Path;
-import org.infamousmc.ranktree.Data.Rank;
+import net.luckperms.api.track.PromotionResult;
+import org.infamousmc.ranktree.Data.*;
 import net.luckperms.api.context.ImmutableContextSet;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
@@ -173,16 +171,11 @@ public class GuiHandler implements Listener {
         });
     }
 
+    // Unused atm - Will be used when prestige is added
     private void removePermission(UUID uuid, String permission) {
         plugin.lp.getUserManager().modifyUser(uuid, user -> {
             user.data().remove(Node.builder(permission).build());
         });
-    }
-
-    private void promoteUser(Player player, String path) {
-        User user = plugin.lp.getPlayerAdapter(Player.class).getUser(player);
-        Track track = plugin.lp.getTrackManager().getTrack(path);
-        track.promote(user, ImmutableContextSet.empty());
     }
 
     private void rankup(Player player, String path) {
@@ -193,7 +186,9 @@ public class GuiHandler implements Listener {
 
         User user = plugin.lp.getPlayerAdapter(Player.class).getUser(player);
         Track track = plugin.lp.getTrackManager().getTrack(path);
-        track.promote(user, ImmutableContextSet.empty());
+        PromotionResult result = track.promote(user, ImmutableContextSet.empty());
+        Logger.log(player.getName() + " ranked up with a status of '" + result.getStatus() + "'.");
+        if (!result.wasSuccessful()) Logger.severe("The previous rankup was unsuccessful");
         plugin.lp.getUserManager().saveUser(user);
 
         if (toRank == null) return;
