@@ -54,6 +54,7 @@ public class GuiHandler implements Listener {
         if (container.get(tag, new ItemTagType()) == ItemTag.ROME) {
             player.closeInventory();
             addPermission(uuid, "rank.path.rome");
+            promote(player, "rome");
             player.teleport(new Location(
                     Bukkit.getWorld(plugin.mainConfig.getConfig().getString("roman-spawn.world")),
                     plugin.mainConfig.getConfig().getDouble("roman-spawn.x"),
@@ -69,6 +70,7 @@ public class GuiHandler implements Listener {
         if (container.get(tag, new ItemTagType()) == ItemTag.GREECE) {
             player.closeInventory();
             addPermission(uuid, "rank.path.greece");
+            promote(player, "greece");
             player.teleport(new Location(
                     Bukkit.getWorld(plugin.mainConfig.getConfig().getString("greek-spawn.world")),
                     plugin.mainConfig.getConfig().getDouble("greek-spawn.x"),
@@ -84,6 +86,7 @@ public class GuiHandler implements Listener {
         if (container.get(tag, new ItemTagType()) == ItemTag.JAPAN) {
             player.closeInventory();
             addPermission(uuid, "rank.path.japan");
+            promote(player, "japan");
             player.teleport(new Location(
                     Bukkit.getWorld(plugin.mainConfig.getConfig().getString("japanese-spawn.world")),
                     plugin.mainConfig.getConfig().getDouble("japanese-spawn.x"),
@@ -176,6 +179,12 @@ public class GuiHandler implements Listener {
         plugin.lp.getUserManager().modifyUser(uuid, user -> {
             user.data().remove(Node.builder(permission).build());
         });
+    }
+
+    private void promote(Player player, String path) {
+        User user = plugin.lp.getPlayerAdapter(Player.class).getUser(player);
+        Track track = plugin.lp.getTrackManager().getTrack(path);
+        track.promote(user, ImmutableContextSet.empty());
     }
 
     private void rankup(Player player, String path) {
